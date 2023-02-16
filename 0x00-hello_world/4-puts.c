@@ -1,4 +1,6 @@
-int main (void) {
 #include <stdio.h>
-puts("Programming is like building a multilinguial puzzle")
+int main (void) 
+{
+	puts("Programming is like building a multilinguial puzzle");
+	return 0;
 }
