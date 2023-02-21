@@ -20,8 +20,8 @@ void times_table(void)
 			{
 				_putchar('0' + nbr);
 				_putchar(',');
-				_putchar('\t');
-			}
+				_putchar(' ');
+			} 
 			else
 			{
 				nbr2 = nbr % 10;
@@ -29,7 +29,7 @@ void times_table(void)
 				_putchar('0' + nbr);
 				_putchar('0' + nbr2);
 				_putchar(',');
-				_putchar('\t');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
