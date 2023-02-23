@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_line - draws a straight line
- * @n: number of
- *_
+ * @n: number of _
+ *
  * Return: void
  */
 void print_line(int n)
