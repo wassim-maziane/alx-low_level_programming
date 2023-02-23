@@ -18,12 +18,7 @@ int main(void)
 		else if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz ");
 		else
-		{
-			if (i != 100)
-				printf("%d ", i);
-			else
-				printf("%d", i);
-		}
+			printf("%d ", i);
 
 	}
 	printf("\n");
