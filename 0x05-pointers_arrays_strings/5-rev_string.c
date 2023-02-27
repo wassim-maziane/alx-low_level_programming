@@ -19,5 +19,11 @@ void rev_string(char *s)
 		*(s + i) = *(s + cnt - 1 - i);
 		*(s + cnt - 1 - i) = c;
 	}
+	if (cnt % 2 == 0)
+	{
+		c = *(s + (cnt - 1) / 2);
+		*(s + (cnt - 1) / 2) = *(s + cnt - 1 - (cnt - 1) / 2);
+		*(s + cnt - 1 - (cnt - 1) / 2) = c;
+
 }
 
