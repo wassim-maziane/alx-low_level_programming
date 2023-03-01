@@ -21,7 +21,7 @@ char *_strncat(char *dest, char *src, int n)
 	if (min > cnts)
 		min = cnts;
 	for (i = 0; i < min; i++)
-		*(dest + cntd + i) = *(src + i);	
+		*(dest + cntd + i) = *(src + i);
 	if (min == n)
 		*(dest + cntd + min) = '\0';
 	else
