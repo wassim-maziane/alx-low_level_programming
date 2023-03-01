@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 		cnts++;
 	while (*(dest + cntd) != '\0')
 		cntd++;
-	if (min > cnts)
+	if (min > cnts - 1)
 		min = cnts - 1;
 	for (i = 0; i <= min; i++)
 		*(dest + cntd + i) = *(src + i);
