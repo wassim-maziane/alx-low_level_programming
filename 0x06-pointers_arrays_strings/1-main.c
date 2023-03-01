@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdio.h>
 int main(void)
 {
 	    char s1[98] = "Hello ";

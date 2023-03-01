@@ -18,12 +18,14 @@ char *_strncat(char *dest, char *src, int n)
 		cnts++;
 	while (*(dest + cntd) != '\0')
 		cntd++;
-	if (min > cnts - 1)
-		min = cnts - 1;
-	for (i = 0; i <= min; i++)
+	if (min > cnts)
+		min = cnts;
+	for (i = 0; i < min; i++)
 		*(dest + cntd + i) = *(src + i);
-	*(dest + cntd + min + 1) = '\0';
+	
+	if (min == n)
+		*(dest + cntd + min) = '\0';
+	else
+		*(dest + cntd + cnts) = '\0';
 	return (dest);
 }
-
-
