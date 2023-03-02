@@ -17,10 +17,10 @@ int _strcmp(char *s1, char *s2)
 	while (s2[cnt2] != '\0')
 		cnt2++;
 	while (s1[cnt] == s2[cnt])
-		cnts++;
-	if (cnts == cnt1 && cnts == cnt2)
+		cnt++;
+	if (cnt == cnt1 && cnt == cnt2)
 		return (0);
-	else if (s1[cnts] > s2[cnts])
+	else if (s1[cnt] > s2[cnt])
 		return (1);
 	else
 		return (-1);
