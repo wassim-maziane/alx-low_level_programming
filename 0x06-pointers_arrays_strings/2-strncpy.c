@@ -18,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 		cnts++;
 	while (*(dest + cntd) != '\0')
 		cntd++;
-	if ((min > cnts) && (cntd > cnts)
+	if ((min > cnts) && (cntd > cnts))
 		min = cnts;
 	else if ((n > cntd) && (cnts > cntd))
 		min = cntd;
