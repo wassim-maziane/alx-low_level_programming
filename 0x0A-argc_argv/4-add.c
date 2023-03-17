@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - entry point
  * @argc: size of argv
@@ -19,11 +20,12 @@ int main(int argc, char **argv)
 		{
 			if (!(isdigit(argv[i][c])))
 			{
-				printf("Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
-		sum += argv[i];
+		sum += atoi(argv[i]);
 	}
-	return (sum);
+	printf("%d\n", sum);
+	return (0);
 }
