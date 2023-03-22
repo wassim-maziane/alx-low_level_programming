@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * _strdup - returns a pointer to a newly allocated space in memory containing a copy of str
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * containing a copy of str
  * @str: string to be copied
  *
  * Return: pointer to newly allocated memory
@@ -12,7 +13,9 @@ char *_strdup(char *str)
 	char *ar;
 	int cnt = 0;
 	int i;
-	
+
+	if (str == NULL)
+		return (NULL);
 	while (str[cnt])
 		cnt++;
 
