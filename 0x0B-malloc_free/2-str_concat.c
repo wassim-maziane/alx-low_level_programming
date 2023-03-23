@@ -15,10 +15,6 @@ char *str_concat(char *s1, char *s2)
 	int cnt2 = 0;
 	int len;
 
-	if (s1 == NULL)
-		*s1 = '\0';
-	if (s2 == NULL)
-		*s2 = '\0';
 	if (s1 != NULL)
 	{
 		while (s1[cnt1])
@@ -30,10 +26,8 @@ char *str_concat(char *s1, char *s2)
 		cnt2++;
 	}
 	len = cnt1 + cnt2;
-	if (len == 0)
-		return (NULL);
 	str = malloc((len + 1) * sizeof(char));
-	if (str == 0)
+	if (str == NULL)
 		return (NULL);
 	str[len] = '\0';
 	while (cnt2--)
