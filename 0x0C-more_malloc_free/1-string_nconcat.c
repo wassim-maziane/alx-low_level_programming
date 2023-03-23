@@ -12,17 +12,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	unsigned int cnt1, cnt2;
-	
+
 	cnt1 = cnt2 = 0;
 	if (s1)
 		for (; s1[cnt1]; cnt1++)
 			;
 	if (s2)
 		for (; s2[cnt2]; cnt2++)
-			;	
+			;
 	if (n < cnt2)
 		cnt2 = n;
-	str = malloc(sizeof *str * (cnt1 + cnt2 + 1));
+	str = malloc(sizeof(*str) * (cnt1 + cnt2 + 1));
 	if (!str)
 		return (NULL);
 
