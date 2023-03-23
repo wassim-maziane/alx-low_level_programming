@@ -23,12 +23,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n < cnt2)
 		cnt2 = n;
 	str = malloc(sizeof *str * (cnt1 + cnt2 + 1));
-	if (str == NULL)
+	if (!str)
 		return (NULL);
-	str[cnt1 + cnt2] == '\0';
+
+	str[cnt1 + cnt2] = '\0';
 	while (cnt2--)
-		str[cnt1 + cnt2] == s2[cnt2];
+		str[cnt1 + cnt2] = s2[cnt2];
 	while (cnt1--)
-		str[cnt1] == s1[cnt1];
+		str[cnt1] = s1[cnt1];
 	return (str);
 }
