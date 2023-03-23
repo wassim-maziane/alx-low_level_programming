@@ -19,10 +19,16 @@ char *str_concat(char *s1, char *s2)
 		*s1 = '\0';
 	if (s2 == NULL)
 		*s2 = '\0';
-	while (s1[cnt1])
-		cnt1++;
-	while (s2[cnt2])
+	if (s1 != NULL)
+	{
+		while (s1[cnt1])
+			cnt1++;
+	}
+	if (s2 != NULL)
+	{
+		while (s2[cnt2])
 		cnt2++;
+	}
 	len = cnt1 + cnt2;
 	if (len == 0)
 		return (NULL);
