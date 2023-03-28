@@ -17,11 +17,10 @@ void print_dog(struct dog *d)
 		return;
 	if (!(name))
 		name = "(nil)";
-	if (!(age))
-	{
-		char *age = "(nil)";
-	}
 	if (!(owner))
 		owner = "(nil)";
-	printf("Name: %s\nAge: %.6f\nOwner : %s", name, age, owner);
+	if (age)
+		printf("Name: %s\nAge: %.6f\nOwner : %s", name, age, owner);
+	else
+		printf("Name: %s\nAge: %s\nOwner : %s", name, "(nil)", owner);
 }
