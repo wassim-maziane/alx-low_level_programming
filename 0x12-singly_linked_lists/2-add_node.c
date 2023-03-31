@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * add_node_end - adds a new node at the end of a lsit
+ * add_node - adds a new node at the end of a lsit
  * @head: adds a node to a list
  * @str: string on the nod
  *
