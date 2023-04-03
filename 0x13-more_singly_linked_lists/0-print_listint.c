@@ -2,9 +2,15 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
+/**
+ * print_listint - prints a linked list
+ * @h: head of linked list
+ *
+ * Return: size of list
+ */
 size_t print_listint(const listint_t *h)
 {
-	long unsigned int i = 0;
+	unsigned long int i = 0;
 
 	if (!(h))
 		return (0);
@@ -12,7 +18,6 @@ size_t print_listint(const listint_t *h)
 		i++;
 		printf("%d\n", h->n);
 		h = h->next;
-	}
-	while (h);
+	} while (h);
 	return (i);
 }
