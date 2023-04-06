@@ -19,13 +19,13 @@ separator = NULL;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
-str = va_arg(args, char*);
+str = va_arg(args, char *);
 if (!str)
-str = "(nil)";
-if (i == n - 1)
-printf("%s", str);
+printf("(nil)");
 else
-printf("%s%s", str, separator);
+printf("%s", str);
+if (i != (n-1) && separator != NULL)
+printf("%s", separator);
 }
 printf("\n");
 va_end(args);
