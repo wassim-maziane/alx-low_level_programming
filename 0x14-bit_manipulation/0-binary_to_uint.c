@@ -17,10 +17,10 @@ unsigned int binary_to_uint(const char *b)
 	for (i = len - 1; i >= 0; i--)
 	{
 		if (b[i] == '1')
-      n += mult;
-		else if(b[i] != '0')
-      return (0);
-    mult *= 2;
+			n += mult;
+		else if (b[i] != '0')
+			return (0);
+		mult *= 2;
 	}
-  return (n);
+	return (n);
 }
