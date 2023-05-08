@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 /**
  * read_textfile - reads from text file
